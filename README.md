@@ -1,46 +1,42 @@
-# Molsom Freshers' Meet — Donation Campaign
+# Solaray Power Innovations Private Limited Website
 
-A responsive static website template for sharing information about a community Freshers' Meet donation campaign.
+A responsive static-style company website with a small Node.js server. It uses the supplied Solaray logo and wordmark images.
 
 ## Files
 
-- `index.html` — campaign page and pledge form
-- `styles.css` — responsive visual styling
-- `script.js` — client-side form validation and demo pledge storage
-- `node.js` — minimal Node.js static-file server
-
-## Requirements
-
-- Node.js 18 or newer recommended
-- No third-party packages are required
+- `index.html` — page structure and company information
+- `styles.css` — responsive layout, colours and styling
+- `script.js` — mobile navigation, current year and enquiry form behaviour
+- `server.js` — lightweight Node.js web server
+- `solaray-logo.jpg` — supplied circular logo
+- `solaray-wordmark.jpg` — supplied company wordmark
 
 ## Run locally
 
-1. Put all four files in the same folder.
-2. Open a terminal in that folder.
-3. Run:
+1. Install Node.js (version 18 or newer recommended).
+2. Extract this ZIP file.
+3. Open a terminal in the extracted folder.
+4. Run:
 
    ```bash
-   node node.js
+   node server.js
    ```
 
-4. Visit <http://localhost:3000> in your browser.
-5. Press `Ctrl+C` in the terminal to stop the server.
+5. Open `http://localhost:3000` in your browser.
 
-You can also open `index.html` directly, though running the server is recommended.
+You can also open `index.html` directly, although running the server is recommended.
 
-## Important limitations
+## Enquiry form
 
-- This is a front-end demo. The pledge form stores entries in `sessionStorage` in the visitor's browser session only.
-- No payment is taken, and pledges are not sent to the organisers or saved in a database.
-- Do not collect UPI PINs, passwords, card details, or other sensitive payment information.
-- Before publishing, verify the campaign name, organisers, budget, contact details, and donation instructions.
-- To accept real donations, integrate a reputable payment provider on a secure backend, verify payment callbacks server-side, protect personal data, and publish appropriate privacy and refund information.
+The form validates the required fields in the browser and opens WhatsApp with a prefilled message to **+91 93664 95875**. The visitor must review and send the message in WhatsApp. This demo does not collect, store, or transmit form submissions to a website database.
 
-## Deployment
+## Before publishing
 
-Deploy the folder to a static host or Node.js hosting provider. For a public campaign, use HTTPS and only publish verified organiser and payment details.
+- Verify company details, contact numbers, address, service descriptions and opening hours.
+- Only publish claims such as government/MNRE/TSECL authorisation if you have verified documentation and permission to make those claims. This template intentionally does not state that approval is verified.
+- Add a privacy policy if you add analytics, tracking or a backend form handler.
+- Deploy the folder to your preferred hosting provider or configure the Node server on a supported host.
 
-## License
+## Customisation
 
-Use and adapt this template for your campaign. Confirm you have permission to use any names, logos, and campaign materials.
+Update the content in `index.html`, the colours in `styles.css`, and the WhatsApp number in `script.js` if the company confirms a different enquiry number.
